@@ -10,21 +10,21 @@ class Range:
     def start(self) -> float:
         return self.__start
 
-    @property
-    def end(self) -> float:
-        return self.__end
-
-    @property
-    def length(self) -> float:
-        return self.__end - self.__start
-
     @start.setter
     def start(self, start: float) -> None:
         self.__start = start
 
+    @property
+    def end(self) -> float:
+        return self.__end
+
     @end.setter
     def end(self, end: float) -> None:
         self.__end = end
+
+    @property
+    def length(self) -> float:
+        return self.__end - self.__start
 
     def is_inside(self, number: float) -> bool:
         return self.__start <= number <= self.__end
