@@ -7,6 +7,14 @@ class Circle(Shape):
     def __init__(self, radius: float) -> None:
         self.__radius = radius
 
+    @property
+    def radius(self) -> float:
+        return self.__radius
+
+    @radius.setter
+    def radius(self, radius: float) -> None:
+        self.__radius = radius
+
     @override
     def get_width(self) -> float:
         return 2 * self.__radius

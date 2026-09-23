@@ -14,6 +14,54 @@ class Triangle(Shape):
         self.__x3 = x3
         self.__y3 = y3
 
+    @property
+    def x1(self) -> float:
+        return self.__x1
+
+    @x1.setter
+    def x1(self, x1: float) -> None:
+        self.__x1 = x1
+
+    @property
+    def y1(self) -> float:
+        return self.__y1
+
+    @y1.setter
+    def y1(self, y1: float) -> None:
+        self.__y1 = y1
+
+    @property
+    def x2(self) -> float:
+        return self.__x2
+
+    @x2.setter
+    def x2(self, x2: float) -> None:
+        self.__x2 = x2
+
+    @property
+    def y2(self) -> float:
+        return self.__y2
+
+    @y2.setter
+    def y2(self, y2: float) -> None:
+        self.__y2 = y2
+
+    @property
+    def x3(self) -> float:
+        return self.__x3
+
+    @x3.setter
+    def x3(self, x3: float) -> None:
+        self.__x3 = x3
+
+    @property
+    def y3(self) -> float:
+        return self.__y3
+
+    @y3.setter
+    def y3(self, y3: float) -> None:
+        self.__y3 = y3
+
     @staticmethod
     def __get_segment_length(x1: float, y1: float, x2: float, y2: float) -> float:
         return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)

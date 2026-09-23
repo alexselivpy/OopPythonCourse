@@ -7,6 +7,22 @@ class Rectangle(Shape):
         self.__width = width
         self.__height = height
 
+    @property
+    def width(self) -> float:
+        return self.__width
+
+    @width.setter
+    def width(self, width: float) -> None:
+        self.__width = width
+
+    @property
+    def height(self) -> float:
+        return self.__height
+
+    @height.setter
+    def height(self, height: float) -> None:
+        self.__height = height
+
     @override
     def get_width(self) -> float:
         return self.__width

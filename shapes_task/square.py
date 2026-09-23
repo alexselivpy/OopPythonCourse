@@ -6,6 +6,14 @@ class Square(Shape):
     def __init__(self, side_length: float) -> None:
         self.__side_length = side_length
 
+    @property
+    def side_length(self) -> float:
+        return self.__side_length
+
+    @side_length.setter
+    def side_length(self, side_length: float) -> None:
+        self.__side_length = side_length
+
     @override
     def get_width(self) -> float:
         return self.__side_length
